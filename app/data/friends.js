@@ -2,18 +2,18 @@ module.exports = [
 
     {
         name: "Kyra",
-        photo: "./data/images/kyra.jpg",
+        photo: "./images/kyra.jpg",
         scores: [
-            5 (Strongly Agree),
+            5,
             3,
             4,
-            1 (Strongly Disagree),
+            1,
             4,
-            5 (Strongly Agree),
-            2,
+            5,
+            4,
             3,
             2,
-            1 (Strongly Disagree)
+            1
         ]
 
 
@@ -21,19 +21,18 @@ module.exports = [
     {
 
         name: "Cashel",
-        photo: "./data/images/cashel.jpg",
+        photo: "./images/cashel.jpg",
         scores: [
-
+            5,
             3,
             4,
-            1 (Strongly Disagree),
-            4,
-            5 (Strongly Agree),
-            2,
             3,
+            4,
+            5,
+            1,
             2,
-            1 (Strongly Disagree),
-            5 (Strongly Agree)
+            2,
+            1
         ]
     },
 
