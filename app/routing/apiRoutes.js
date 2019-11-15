@@ -36,7 +36,7 @@ module.exports = function (app) {
 
         console.log(newFriend);
 
-        friends.push(newFriend)
+       
         //data should go to app/data/friends.js
         //compatability 
 
@@ -75,7 +75,7 @@ module.exports = function (app) {
             matchIndex = i;
         }
 
-        console.log(matchIndex);
+        //  console.log(matchIndex);
 
     }
 
@@ -83,12 +83,12 @@ module.exports = function (app) {
 
     res.send(friends[matchIndex]);
 
-  
-
+//   console.log(friends[matchIndex].name);
+  friends.push(newFriend)
 
     })
 
-
+  
 }
 
 // $("#results").on("click", function (event) {

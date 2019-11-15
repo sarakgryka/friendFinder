@@ -24,16 +24,41 @@ $(document).ready(function () {
             photo: $("#picForm").val().trim(),
             scores: scoresAns
 
+
         };
 
         $
-        .post("/api/friends", newFriend)
-        .then(function(response){
+            .post("/api/friends", newFriend)
+            .then(function (response) {
 
-            console.log(response);
+                console.log(response);
+
+
+                let matchName = $("<h1>")
+                matchName.text(response.name)
+                $(".modal-body").append(matchName)
+
+                let matchPic = $("<img>");
+                matchPic.attr("src", response.photo)
+                $(".modal-body").append(matchPic)
+
+            })
+
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+
+
         })
 
-       
+        //   $
+        //   .get("/api/friends", friends[matchIndex])
+        //   .then(function(response){
+
+        //     console.log(response)
+
+        //     console.log(friends[matchIndex])
+        //   })
+
     })
 
 })
